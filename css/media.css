@@ -1,0 +1,22 @@
+@media  screen and (max-width: 1110px) {
+  html {
+    font-size: 50%;
+  }
+
+  .header__container, 
+  .header__nav,
+  .header__nav-list {
+    flex-wrap: wrap;
+  }
+}
+
+@media  screen and (max-width: 860px) {
+  html {
+    font-size: 45%;
+  }
+  
+  .header__container, 
+  .header__nav {
+    flex-direction: column;
+  }
+}
