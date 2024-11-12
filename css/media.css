@@ -19,4 +19,22 @@
   .header__nav {
     flex-direction: column;
   }
+  
+  .header__container {
+    margin-bottom: 3rem;
+  }
+
+  .header__bgc {
+    min-width: 100%;
+  }
+}
+
+@media  screen and (max-width: 470px) {
+  html {
+    font-size: 40%;
+  }
+  .services__inner {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
 }
