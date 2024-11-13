@@ -27,6 +27,11 @@
   .header__bgc {
     min-width: 100%;
   }
+
+  .about__container {
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 
 @media  screen and (max-width: 470px) {

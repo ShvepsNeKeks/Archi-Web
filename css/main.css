@@ -23,6 +23,8 @@ body {
 }
 
 a {
+  padding: .5rem 1.5rem;
+  position: relative;
   color: var(--main-color);
 }
 
@@ -49,10 +51,25 @@ a {
 }
 
 .small-text {
-  color: var(--main-color);
   font-family: var(--font-play-disp);
   font-size: 1.7rem;
   font-weight: 400;
+}
+
+.style-hover-link::before {
+  content: attr(data-text);
+  padding: .5rem 1.5rem;
+  position: absolute;
+  inset: 0;
+  transform: scaleX(0);
+  transition: transform var(--time-trans);
+  border-radius: .5rem;
+  background-color: var(--main-color);
+  color: var(--white-color);
+}
+
+.style-hover-link:hover::before {
+  transform: scaleX(1);
 }
 
 /* Шапка */
@@ -82,32 +99,8 @@ a {
   gap: 4.5rem;
 }
 
-.header__link {
-  position: relative;
-}
-
 .header__item-list:first-child {
   font-weight: 700;
-}
-
-.header__link,
-.header__link::before {
-  padding: .5rem 1.5rem;
-}
-
-.header__link::before {
-  content: attr(data-text);
-  position: absolute;
-  inset: 0;
-  transform: scaleX(0);
-  transition: transform var(--time-trans);
-  border-radius: .5rem;
-  background-color: var(--main-color);
-  color: var(--white-color);
-}
-
-.header__link:hover::before {
-  transform: scaleX(1);
 }
 
 .header__serch-form {
@@ -194,4 +187,42 @@ a {
 .services__item-title {
   margin-bottom: .8rem;
   font-size: 2.7rem;
+}
+
+/* О компании */
+.about {
+  padding-top: 8rem;
+}
+
+.about__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 135rem;
+  gap: 5rem;
+}
+
+.about__img-inner {
+  max-width: 73.5rem;
+}
+
+.about__text-inner {
+  max-width: 46rem;
+}
+
+.about__title {
+  margin-bottom: 2.7rem;
+}
+
+.about__text {
+  margin-bottom: 4rem;
+  font-size: 3.1rem;
+  font-family: var(--font-play-disp);
+  font-size: 400;
+}
+
+.about__link {
+  font-size: 2.4rem;
+  font-family: var(--font-inter);
+  font-weight: 600;
 }
