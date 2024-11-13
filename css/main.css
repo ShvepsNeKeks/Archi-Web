@@ -253,3 +253,42 @@ a {
   max-width: 18rem;
   text-align: center;
 }
+
+/* Отзывы */
+.testimonial {
+  padding-top: 9rem;
+  margin-bottom: 15rem;
+}
+
+.testimonial__title {
+  margin-bottom: 9rem;
+  text-align: center;
+}
+
+:is(.testimonial__flex-box, .testimonial__item) {
+  display: flex;
+  justify-content: center;
+}
+
+.testimonial__flex-box {
+  gap: 13rem;
+}
+
+.testimonial__item {
+  gap: 3rem;
+}
+
+.testimonial__img-inner {
+  min-width: 15rem;
+}
+
+.testimonial__text-iiner {
+  max-width: 37rem;
+}
+
+.testimonial__item-title {
+  margin-bottom: 2rem;
+  font-family: var(--font-play-disp);
+  font-size: 2.8rem;
+  font-weight: 700;
+}
