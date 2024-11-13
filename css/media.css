@@ -8,6 +8,16 @@
   .header__nav-list {
     flex-wrap: wrap;
   }
+
+  .projects__title {
+    text-align: center;
+  }
+
+  .projects__grid {
+    grid-template-columns: repeat(2, 35rem);
+    justify-content: center;
+    grid-auto-flow: row;
+  }
 }
 
 @media  screen and (max-width: 860px) {
@@ -34,12 +44,16 @@
   }
 }
 
-@media  screen and (max-width: 470px) {
+@media  screen and (max-width: 570px) {
   html {
     font-size: 40%;
   }
   .services__inner {
     flex-direction: column;
     gap: 1.5rem;
+  }
+
+  .projects__grid {
+    grid-template-columns: repeat(1, 35rem);
   }
 }

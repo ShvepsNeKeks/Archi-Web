@@ -226,3 +226,30 @@ a {
   font-family: var(--font-inter);
   font-weight: 600;
 }
+
+/* Проекты */
+.projects {
+  padding-top: 10rem;
+}
+
+.projects__title {
+  margin-bottom: 7rem;
+}
+
+.projects__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 35rem);
+  grid-template-rows: repeat(2, 1fr);
+  justify-content: space-between;
+  gap: 5rem;
+}
+
+.projects__img-inner {
+  margin-bottom: 1.5rem;
+}
+
+.projects__text {
+  margin-inline: auto;
+  max-width: 18rem;
+  text-align: center;
+}
