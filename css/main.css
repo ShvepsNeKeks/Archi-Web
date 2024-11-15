@@ -23,7 +23,6 @@ body {
 }
 
 a {
-  padding: .5rem 1.5rem;
   position: relative;
   color: var(--main-color);
 }
@@ -70,6 +69,10 @@ a {
 
 .style-hover-link:hover::before {
   transform: scaleX(1);
+}
+
+:is(.header__link, .about__link) {
+  padding: .5rem 1.5rem;
 }
 
 /* Шапка */
@@ -291,4 +294,62 @@ a {
   font-family: var(--font-play-disp);
   font-size: 2.8rem;
   font-weight: 700;
+}
+
+/* Подвал */
+.footer {
+  padding: 5rem 7.5rem;
+  background-color: var(--main-color);
+}
+
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  font-family: var(--font-inter);
+  color: var(--white-color);
+}
+
+.footer__item {
+  font-size: 1.7rem;
+  font-weight: 400;
+}
+
+.footer__logo {
+  margin-bottom: 1rem;
+  color: var(--white-color);
+}
+
+.footer__text {
+  margin-bottom: 5rem;
+  max-width: 29rem;
+  line-height: 2.9rem;
+}
+
+.footer__icon-link:not(:last-child) {
+  margin-right: 3.5rem;
+}
+
+.footer__title {
+  margin-bottom: 2rem;
+  font-size: 2.4rem;
+  font-weight: 900;
+}
+
+.footer__link {
+  color: var(--white-color);
+  line-height: 3.1rem;
+  transition: opacity var(--time-trans);
+}
+
+:is(.footer__link, .footer__icon-link) {
+  transition: opacity var(--time-trans);
+}
+
+:hover:is(.footer__link, .footer__icon-link) {
+  opacity: .5;
+}
+
+.footer__map {
+  max-width: 30rem;
+  max-height: 22rem;
 }
